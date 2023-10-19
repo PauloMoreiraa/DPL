@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box .conteudo {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.6705882353);
+  border-radius: 12px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .box .conteudo {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: transparent;
+  }
+  .box .conteudo .contato {
+    background-color: rgba(255, 255, 255, 0.6705882353);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box .conteudo .contato .duvidas {
+    color: #000;
+  }
+}
+.box .conteudo h1 {
+  font-size: 3rem;
+  color: #f00;
+}
+.box .conteudo h2 {
+  font-size: 2.2rem;
+}
+.box .conteudo span {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
