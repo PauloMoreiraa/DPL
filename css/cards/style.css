@@ -1,0 +1,60 @@
+.cards {
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 26vh;
+  padding-right: 26vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1262px) {
+  .cards {
+    justify-content: space-around;
+    gap: 50px;
+  }
+}
+@media (max-width: 630px) {
+  .cards {
+    padding: 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
+.cards .card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background: linear-gradient(45deg, #222, #111);
+  min-height: 400px;
+  border-radius: 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cards .card img {
+  width: 128px !important;
+}
+.cards .card .texto {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+.cards .card .primeiro {
+  margin-bottom: -20px;
+  padding-top: 20px;
+}
+.cards .card .terceiro {
+  margin-top: -20px;
+}
+.cards .card .destaque {
+  font-size: 5rem;
+  font-weight: bolder;
+}/*# sourceMappingURL=style.css.map */

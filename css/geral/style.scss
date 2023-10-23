@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif!important;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+   
+}
+
+
+
+.container-whatsapp{
+    position: fixed;
+    width: 100%;
+    background-color: transparent!important;
+    margin-bottom: 0px!important;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: 630px) {
+        justify-content: center;
+    }
+
+    .link-whatsapp{
+        text-decoration: none;
+        color: #fff;
+        background-color: #4CAF50;
+        width: 220px;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: .3s;
+        margin: 20px!important;
+
+        @media (max-width: 630px) {
+            margin-right: 0;
+            width: 90%;
+        }
+    
+        &:hover{
+            background-color: #cafacb!important;
+            color: #4CAF50;
+            transition: .3s;
+        }
+    }
+}
+
+.scroll{
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 200px!important;
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .3;
+        animation: scrolling infinite ease-in-out 2s;
+        transition: .3s;
+
+        &:hover{
+            color: #fff;
+            opacity: .5;
+            transition: .3s;
+        }
+    }
+}
+
+@keyframes scrolling{
+    0%{
+        transform: translateY(-7px);
+
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(-7px);
+    }
+}

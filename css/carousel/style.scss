@@ -1,0 +1,106 @@
+@import '../geral/style.scss';
+
+.carousel-indicators{
+
+    button{
+        width: 10px!important;
+        height: 10px!important;
+        border-radius: 50%;
+        background-color: #eee!important;
+        opacity: 1!important;
+        border: 2px solid #eee!important;
+    }
+    .active{
+        background-color: #f00!important;
+        width: 10px!important;
+        height: 10px!important;
+        border-radius: 50%;
+        border: 2px solid #eee!important;
+    }
+}
+
+.carousel-inner{
+    height: 85vh;
+
+    #matriz{
+        background-image: url('../../img/wallpaperM.jpeg');
+    }
+    #sp{
+        background-image: url('../../img/wallpaperSP.png');
+    }
+    #ctba{
+        background-image: url('../../img/wallpaperCB.png');
+    }
+    
+
+    .carousel-item{
+        height: 85vh;
+        background-size: cover;
+        background-position: left;
+        
+        .conteudo{
+            width: 100%;
+            height: 100%;
+
+            .gradient{
+                background: linear-gradient(180deg, #ff000000 5%, #0c0c0c 95%);
+                width: 100%;
+                height: 86vh;
+                
+
+                .gradient-2{
+                    height: 85vh;
+                    background: linear-gradient(90deg, #ff000000, #0c0c0c);
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding: 26vh;
+                    flex-direction: column;
+
+                    @media (max-width: 970px){
+                        padding: 5%;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding-top: 13vh;
+                    }
+    
+                    @media (max-width: 630px) {
+                        background: linear-gradient(360deg, #ffffff00, #000);
+                    }
+
+                    h1{
+                        color: #fff;
+                        font-family: 'Poppins', sans-serif!important;
+                        font-weight: bolder;
+                        width: 45%;
+                        text-align: right;
+                        font-size: 6vh;
+                        text-transform: uppercase;
+                        //background-color: #f00;
+    
+                        @media (max-width: 970px) {
+                            width: 100%;
+                            //background-color: #f00;
+                            font-size: 5vh;
+                        }
+                    }
+    
+                    .barra{
+                        width: 120px;
+                        height: 8px;
+                        background-color: #eee;
+
+                    
+                        @media (max-width: 630px){
+                        
+                            float: right;
+                        
+                            margin-left: 250px;
+                        }
+                    }
+                }
+            }
+               
+        }
+    }
+}
