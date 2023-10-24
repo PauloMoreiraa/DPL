@@ -48,16 +48,16 @@ header .redes-sociais .links .rede:hover {
   transition: 0.3s;
 }
 header .redes-sociais .links .facebook {
-  background-image: url("../../img/icons/facebook.png");
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/facebook.png?raw=true");
 }
 header .redes-sociais .links .instagram {
-  background-image: url("../../img/icons/instagram.png");
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/instagram.png?raw=true");
 }
 header .redes-sociais .links .linkedin {
-  background-image: url("../../img/icons/linkedin.png");
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/linkedin.png?raw=true");
 }
 header .redes-sociais .links .whatsapp {
-  background-image: url("../../img/icons/whatsapp1.png");
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/whatsapp1.png?raw=true");
 }
 header .menu {
   display: flex;

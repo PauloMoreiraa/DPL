@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="css/carousel/style.css">
     <link rel="stylesheet" href="css/cards/style.css">
     <link rel="stylesheet" href="css/menu/style.css">
+    <link rel="stylesheet" href="css/slick/style.css">
+    <link rel="stylesheet" href="css/footer/style.css">
     
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+    <!--SlickJS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
     
 </head>
@@ -32,7 +36,7 @@
         </nav>
         <nav class="menu">
             <div class="logo">
-                <img src="img/logo-sem-slogan.png" alt="">
+                <img src="https://github.com/PauloMoreiraa/DPL/blob/main/img/logo-sem-slogan.png?raw=true" alt="Logo da DPL">
             </div>
           
             <ul>
@@ -51,11 +55,20 @@
         <a href="#cards">Ver mais&nbsp;<box-icon name='mouse' color='#ffffff' ></box-icon></a>
     </div>
 
-    <div class="container-whatsapp">
+    <!-- <div class="container-whatsapp">
         <a class="link-whatsapp" href="https://wa.link/2wjjho" target="_blank">
-            <span>Seja nosso cliente&nbsp;&nbsp;<img src="img/icons/whatsapp.png" width="25px"></span>
+            <span>Seja nosso cliente&nbsp;&nbsp;<img src="https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/whatsapp.png?raw=true" width="25px"></span>
         </a>
-    </div>
+    </div> -->
+    <a href="https://wa.link/2wjjho" target="_blank" class="link-wpp-novo">
+        <div class="wpp-novo">
+            <div class="logo-wpp"></div>
+        </div>
+    </a>
+    
+
+
+
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -95,9 +108,7 @@
                     </div>
                 </div>
               </div>
-          
-              
-        </div>
+            </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -111,26 +122,88 @@
       <section id="cards">
         <div class="cards">
             <div class="card" data-aos="flip-right" data-tilt data-tilt-scale="1.05">
-                <img src="img/icons/empresa.png" alt="icone da empresa">
+                <img src="https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/empresa.png?raw=true" alt="icone da empresa">
                 <span class="texto primeiro">Estamos presentes em</span>
                 <span class="texto destaque segundo">3</span>
                 <span class="texto terceiro">cidades do Brasil</span>
             </div>
             <div class="card" data-aos="flip-right" data-tilt data-tilt-scale="1.05">
-                <img src="img/icons/car.png" alt="icone do carro">
+                <img src="https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/car.png?raw=true" alt="icone do carro">
                 <span class="texto primeiro">Há mais de</span>
                 <span class="texto destaque segundo">20</span>
                 <span class="texto terceiro">anos no mercado</span>
             </div>
             <div class="card" data-aos="flip-right" data-tilt data-tilt-scale="1.05">
-                <img src="img/icons/engrenagem.png" alt="icone da empresa">
+                <img src="https://github.com/PauloMoreiraa/DPL/blob/main/img/icons/engrenagem.png?raw=true" alt="icone da empresa">
                 <span class="texto primeiro">Contamos com mais de</span>
                 <span class="texto destaque segundo">50</span>
                 <span class="texto terceiro">marcas renomadas</span>
             </div>
-            
         </div>
       </section>
+      
+      <section class="marcas-container">
+        <div class="titulo-slick">
+            <span>Algumas das marcas que trabalhamos:</span>
+          </div>
+        <div class="marcas">
+            <div class="box-logo" id="sabo" data-slick><img src="https://www.sabo.com.br/wp-content/uploads/2021/08/logo-sabo.png" width="100%" alt=""></div>
+            <div class="box-logo" id="sabo" data-slick><img src="https://www.indisa.com.br/imagens/facebook.jpg" width="100%" alt=""></div>
+            <div class="box-logo"><h3>3</h3></div>
+            <div class="box-logo"><h3>4</h3></div>
+            <div class="box-logo"><h3>5</h3></div>
+            <div class="box-logo"><h3>6</h3></div>
+            <div class="box-logo"><h3>7</h3></div>
+            <div class="box-logo"><h3>8</h3></div>
+            <div class="box-logo"><h3>9</h3></div>
+            <div class="box-logo"><h3>10</h3></div>
+            <div class="box-logo"><h3>11</h3></div>
+            <div class="box-logo"><h3>12</h3></div>
+        </div>  
+      </section>
+
+    <footer class="container-footer">
+
+        <div class="linha">
+            <div class="coluna">
+                <span>Navegação</span>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <span>Navegação</span>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <span>Navegação</span>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <span>Navegação</span>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
 
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -150,6 +223,12 @@
 <script>
   AOS.init();
 </script>
+
+<!--SlickJS-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
 
 <script src="js/menu.js"></script>
 </body>

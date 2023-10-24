@@ -1,0 +1,54 @@
+.marcas-container{
+    width: 100%;
+    padding: 0 26vh;
+    background-color: #0c0c0c;
+    padding-bottom: 110px;
+
+    .titulo-slick{
+        background-color: transparent;
+        color: #fff!important;
+        font-size: 1.2rem!important;
+        font-weight: bolder!important;
+    }
+
+    @media (max-width: 890px) {
+        padding: 0 2vh!important ;
+    }
+
+    .marcas{
+        cursor: grab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0c0c0c;
+    
+        .box-logo{
+            width: 300px;
+            height: 150px;
+            //background-color: #222;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            border-radius: 8px!important;
+            background-size: cover;
+            background-position: center;
+
+            @media (max-width: 890px) {
+                width: 75%;
+            }
+
+            img{
+                border-radius: 8px!important;
+                
+                @media (max-width: 890px) {
+                    width: 75%;
+                }
+            }
+        }
+
+        
+    }
+}
+
