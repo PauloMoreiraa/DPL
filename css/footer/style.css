@@ -14,28 +14,56 @@
   display: flex !important;
   flex-wrap: wrap !important;
 }
+.container-footer .linha p {
+  color: #fff;
+}
 @media (max-width: 956px) {
   .container-footer .linha {
     justify-content: center;
     align-items: center;
   }
 }
+.container-footer .linha .coluna-2 {
+  width: 75%;
+  min-width: 300px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.container-footer .linha .coluna-2 .slogan {
+  color: #fff;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+.container-footer .linha .coluna-2 span {
+  color: #ddd;
+}
 .container-footer .linha .coluna {
   min-width: 300px !important;
   width: 25%;
   background-color: transparent;
+  padding-right: 10px;
 }
 .container-footer .linha .coluna span {
   font-size: 1.1rem !important;
   color: #fff !important;
+  font-weight: bolder;
 }
 .container-footer .linha .coluna ul {
   list-style: none !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: aqua;
+  background-color: transparent;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.container-footer .linha .coluna ul li a {
+.container-footer .linha .coluna ul li a, .container-footer .linha .coluna ul li p {
   text-decoration: none;
+  color: #ddd;
+  display: flex;
+}
+
+hr {
+  color: #ffffff !important;
 }/*# sourceMappingURL=style.css.map */

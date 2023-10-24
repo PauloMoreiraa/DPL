@@ -12,19 +12,43 @@
         display: flex!important;
         flex-wrap: wrap!important;
 
+        p{
+            color: #fff;
+        }
+
         @media (max-width: 956px) {
             justify-content: center;
             align-items: center;
+        }
+
+        .coluna-2{
+            width: 75%;
+            min-width: 300px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+
+            .slogan{
+                color: #fff;
+                font-weight: bolder;
+                padding-top: 10px;
+            }
+
+            span{
+                color: #ddd;
+            }
         }
 
         .coluna{
             min-width: 300px!important;
             width: 25%;
             background-color: transparent;
+            padding-right: 10px ;
 
             span{
                 font-size: 1.1rem!important;
                 color: #fff!important;
+                font-weight: bolder;
             }
 
             ul{
@@ -32,16 +56,23 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                background-color: aqua;
-                
+                background-color: transparent;
+                margin: 0!important;
+                padding: 0!important;
 
                 li{
 
-                    a{
+                    a, p{
                         text-decoration: none;
+                        color: #ddd;
+                        display: flex;
                     }
                 }
             }
         }
     }
+}
+
+hr{
+    color: #ffffff!important;
 }
