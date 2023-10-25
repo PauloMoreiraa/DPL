@@ -5,14 +5,15 @@
 }
 @media (max-width: 630px) {
   .container-footer {
-    padding: 0;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 0 !important;
+    padding-top: 4% !important;
+    padding-bottom: 70px !important;
   }
 }
 .container-footer .linha {
   display: flex !important;
   flex-wrap: wrap !important;
+  width: 100%;
 }
 .container-footer .linha p {
   color: #fff;

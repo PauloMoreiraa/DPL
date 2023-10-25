@@ -4,13 +4,14 @@
     padding-top: 50px!important;
     
     @media (max-width: 630px){
-        padding: 0;
-        padding-top: 4%;
-        padding-bottom: 4%;
+        padding: 0!important;
+        padding-top: 4%!important;
+        padding-bottom: 70px!important;
     }
    .linha{
         display: flex!important;
         flex-wrap: wrap!important;
+        width: 100%;
 
         p{
             color: #fff;

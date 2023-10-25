@@ -13,38 +13,33 @@ body {
 }
 
 .container-whatsapp {
+  display: none !important;
   position: fixed;
-  width: auto !important;
+  width: 100% !important;
   right: 0;
   background-color: transparent !important;
   margin-bottom: 0px !important;
   z-index: 3;
   bottom: 0;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 @media (max-width: 630px) {
   .container-whatsapp {
     justify-content: center;
+    display: flex !important;
   }
 }
 .container-whatsapp .link-whatsapp {
   text-decoration: none;
   color: #fff;
   background-color: #4CAF50;
-  width: 220px;
+  width: 100% !important;
   text-align: center;
   padding: 10px 20px;
   border-radius: 8px;
   transition: 0.3s;
-  margin: 20px !important;
-}
-@media (max-width: 630px) {
-  .container-whatsapp .link-whatsapp {
-    margin-right: 0;
-    width: 90%;
-  }
+  margin: 10px !important;
 }
 .container-whatsapp .link-whatsapp:hover {
   background-color: #cafacb !important;
@@ -103,6 +98,12 @@ body {
   margin: 20px !important;
   border-radius: 8px !important;
   z-index: 1;
+  display: flex !important;
+}
+@media (max-width: 630px) {
+  .link-wpp-novo .wpp-novo {
+    display: none !important;
+  }
 }
 .link-wpp-novo .wpp-novo .logo-wpp {
   display: flex;

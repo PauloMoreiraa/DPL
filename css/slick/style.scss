@@ -9,6 +9,11 @@
         color: #fff!important;
         font-size: 1.2rem!important;
         font-weight: bolder!important;
+
+        @media (max-width: 890px){
+            text-align: center;
+            font-size: 1rem!important;
+        }
     }
 
     @media (max-width: 890px) {
@@ -21,6 +26,7 @@
         align-items: center;
         justify-content: center;
         background-color: #0c0c0c;
+        padding-bottom: 70px;
     
         .box-logo{
             width: 300px;
@@ -40,9 +46,10 @@
 
             img{
                 max-width:350px;
-                max-height:150px;
+                max-height:200px;
                 width: 100%!important;
                 height: auto;
+                
             }
         }
         
