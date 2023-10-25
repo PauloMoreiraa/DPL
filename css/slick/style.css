@@ -30,9 +30,9 @@
   align-items: center;
   justify-content: center;
   margin: 5px;
-  border-radius: 8px !important;
   background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 @media (max-width: 890px) {
   .marcas-container .marcas .box-logo {
@@ -40,10 +40,8 @@
   }
 }
 .marcas-container .marcas .box-logo img {
-  border-radius: 8px !important;
-}
-@media (max-width: 890px) {
-  .marcas-container .marcas .box-logo img {
-    width: 75%;
-  }
+  max-width: 350px;
+  max-height: 150px;
+  width: 100% !important;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
