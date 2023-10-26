@@ -1,0 +1,21 @@
+.btn-vermelho {
+  padding: 10px 20px;
+  background-color: #d61515;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+}
+.btn-vermelho box-icon {
+  transform: translateY(0);
+  transition: 0.3s;
+}
+.btn-vermelho:hover {
+  background-color: #e43636;
+  color: #fff;
+}
+.btn-vermelho:hover box-icon {
+  transform: translateY(5px);
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */

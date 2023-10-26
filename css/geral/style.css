@@ -151,4 +151,16 @@ body {
   transition: 0.2s !important;
   border-radius: 8px 0 0 8px;
   color: #4CAF50;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 3px solid #d61515;
 }/*# sourceMappingURL=style.css.map */

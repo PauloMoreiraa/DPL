@@ -6,7 +6,7 @@
 @media (max-width: 630px) {
   .container-footer {
     padding: 0 !important;
-    padding-top: 4% !important;
+    padding-top: 70px !important;
     padding-bottom: 70px !important;
   }
 }
@@ -30,6 +30,12 @@
   padding-top: 40px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 956px) {
+  .container-footer .linha .coluna-2 {
+    width: 25%;
+    padding-bottom: 30px;
+  }
 }
 .container-footer .linha .coluna-2 .slogan {
   color: #fff;
