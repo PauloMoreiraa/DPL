@@ -153,6 +153,18 @@ body {
   color: #4CAF50;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 3px solid #d61515;
+}
+
 .carousel-indicators button {
   width: 10px !important;
   height: 10px !important;
