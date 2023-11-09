@@ -1,19 +1,159 @@
 main{
     width: 100%;
     height: 100vh;
-    padding-top: 12vh;
-    padding-left: 26vh;
-    padding-right: 26vh;
-    background-image: url('https://images.unsplash.com/photo-1621018613675-06c4ea85b9da?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
+    // background-image: url('https://images.unsplash.com/photo-1531582785230-77676720425c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    // background-size: cover;
+    background-color: #0c0c0c;
 
     .parts{
         width: 100%;
         height: 100%;
         background-color: transparent;
+        padding-top: 12vh;
+        padding-left: 26vh;
+        padding-right: 26vh;
         
-        .part1{
-            
+        @media (max-width: 960px) {
+            padding: 0;
+            padding-left: 1vh;
+            padding-right: 1vh;
+            width: 100%;
+            padding-top: 0;
+        }
+        
+        .part{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+
+            .card-cntt{
+                width: 100%;
+                height: 200px;
+                background-color: #222;
+                border-radius: 8px;
+                display: flex;
+                
+
+                @media (max-width: 960px){
+                    height: 120px;
+                }
+
+                .p1{
+                    width: 20%;
+                    height: 100%;
+                    border-radius: 8px 0 0 8px;
+
+                    @media (max-width: 960px){
+                        display: none;
+                    }
+                }
+
+                #matriz-cntt{
+                    background-image: url('https://github.com/PauloMoreiraa/DPL/blob/main/img/wallpaperM.jpeg?raw=true');
+                    background-size: cover;
+                }
+
+                #pres-cntt{
+                    background-image: url('https://github.com/PauloMoreiraa/DPL/blob/main/img/wallpaperSP.png?raw=true');
+                    background-size: cover;
+                }
+
+                #ctba-cntt{
+                    background-image: url('https://github.com/PauloMoreiraa/DPL/blob/main/img/wallpaperCB.png?raw=true');
+                    background-size: cover;
+                }
+
+                .p2{
+                    width: 60%;
+                    height: 100%;
+                    background-color: #222;
+                    padding: 15px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    
+                    
+
+                    @media (max-width: 960px){
+                        width: 80%;
+                        border-radius: 8px 0 0 8px;
+                      
+                    }
+
+                    .tt{
+                        font-size: 3vh;
+                        background-color: transparent;
+                        font-weight: bolder;
+                        color: #fff;
+                        
+                        @media (max-width: 960px){
+                           font-size: 1.2rem;
+                        }
+                    }
+
+                    p{
+                        font-size: 2vh;
+                        color: #fff;
+
+                        @media (max-width: 960px){
+                            font-size: .7rem;
+                        }
+                    }
+                }
+
+                .p3{
+                    width: 20%;
+                    height: 100%;
+                    background-color: #d61515;
+                    border-radius: 0 8px 8px 0;
+                    transition: .3s;
+
+                    
+
+                    &:hover{
+                        background-color: #e64f49;
+                        transition: .3s;
+                    }
+                    
+
+                    a{
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+
+                        @media (max-width: 960px){
+                          text-align: center;
+                        }
+
+                        ion-icon{
+                            font-size: 5vh;
+                            color: #fff;
+
+                            
+                           }
+        
+                           .map{
+                            color: #fff;
+                            font-size: 1rem;
+
+                            @media (max-width: 960px){
+                                font-size: .6rem;
+                            }
+                           }
+
+                    }
+                   
+                }
+            }
         }
     }
 }

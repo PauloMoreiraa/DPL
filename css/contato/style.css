@@ -1,14 +1,139 @@
 main {
   width: 100%;
   height: 100vh;
-  padding-top: 12vh;
-  padding-left: 26vh;
-  padding-right: 26vh;
-  background-image: url("https://images.unsplash.com/photo-1621018613675-06c4ea85b9da?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
+  background-color: #0c0c0c;
 }
 main .parts {
   width: 100%;
   height: 100%;
   background-color: transparent;
+  padding-top: 12vh;
+  padding-left: 26vh;
+  padding-right: 26vh;
+}
+@media (max-width: 960px) {
+  main .parts {
+    padding: 0;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    width: 100%;
+    padding-top: 0;
+  }
+}
+main .parts .part {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+main .parts .part .card-cntt {
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+  border-radius: 8px;
+  display: flex;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt {
+    height: 120px;
+  }
+}
+main .parts .part .card-cntt .p1 {
+  width: 20%;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt .p1 {
+    display: none;
+  }
+}
+main .parts .part .card-cntt #matriz-cntt {
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/wallpaperM.jpeg?raw=true");
+  background-size: cover;
+}
+main .parts .part .card-cntt #pres-cntt {
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/wallpaperSP.png?raw=true");
+  background-size: cover;
+}
+main .parts .part .card-cntt #ctba-cntt {
+  background-image: url("https://github.com/PauloMoreiraa/DPL/blob/main/img/wallpaperCB.png?raw=true");
+  background-size: cover;
+}
+main .parts .part .card-cntt .p2 {
+  width: 60%;
+  height: 100%;
+  background-color: #222;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt .p2 {
+    width: 80%;
+    border-radius: 8px 0 0 8px;
+  }
+}
+main .parts .part .card-cntt .p2 .tt {
+  font-size: 3vh;
+  background-color: transparent;
+  font-weight: bolder;
+  color: #fff;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt .p2 .tt {
+    font-size: 1.2rem;
+  }
+}
+main .parts .part .card-cntt .p2 p {
+  font-size: 2vh;
+  color: #fff;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt .p2 p {
+    font-size: 0.7rem;
+  }
+}
+main .parts .part .card-cntt .p3 {
+  width: 20%;
+  height: 100%;
+  background-color: #d61515;
+  border-radius: 0 8px 8px 0;
+  transition: 0.3s;
+}
+main .parts .part .card-cntt .p3:hover {
+  background-color: #e64f49;
+  transition: 0.3s;
+}
+main .parts .part .card-cntt .p3 a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt .p3 a {
+    text-align: center;
+  }
+}
+main .parts .part .card-cntt .p3 a ion-icon {
+  font-size: 5vh;
+  color: #fff;
+}
+main .parts .part .card-cntt .p3 a .map {
+  color: #fff;
+  font-size: 1rem;
+}
+@media (max-width: 960px) {
+  main .parts .part .card-cntt .p3 a .map {
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
